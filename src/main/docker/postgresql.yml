@@ -1,0 +1,11 @@
+version: '2'
+services:
+    shine-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/shine/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=shine
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
