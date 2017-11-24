@@ -1,9 +1,12 @@
 {
     "global": {
-        "title": "Shine",
+        "title": "Shine Consulting Ltd",
         "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
         "menu": {
             "home": "Home",
+            "aboutUs": "About us",
+            "solutions": "Solutions",   
+            "contact": "Contact",      
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
@@ -128,5 +131,5 @@
         "emailexists": "Email is already in use!",
         "idexists": "A new {{ entityName }} cannot already have an ID"
     },
-    "footer": "This is your footer"
+    "footer": "Shine consulting Ltd 2018"
 }

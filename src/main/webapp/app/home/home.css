@@ -24,3 +24,33 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
+.row {
+  background: url('../../content/images/shine-main-image.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  left: 0;
+  top: 0;
+  height: 875px;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+a {
+    color: white;
+}

@@ -14,6 +14,9 @@ import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
 // jhipster-needle-angular-add-module-import JHipster will add new module here
+import { ShineSolutionsModule } from './solutions/solutions.module';
+import { ShineAboutUsModule } from './shine/shine.module';
+import { ShineContactModule } from './contact/contact.module';
 
 import {
     JhiMainComponent,
@@ -37,6 +40,9 @@ import {
         ShineAccountModule,
         ShineEntityModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
+        ShineSolutionsModule,
+        ShineAboutUsModule,
+        ShineContactModule
     ],
     declarations: [
         JhiMainComponent,

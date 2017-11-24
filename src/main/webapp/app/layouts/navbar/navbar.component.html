@@ -1,11 +1,12 @@
-<nav class="navbar navbar-dark navbar-expand-md jh-navbar">
+<nav class="navbar navbar-light navbar-expand-md jh-navbar" style="background-color: #FFF;">
     <div class="jh-logo-container float-left">
         <a class="jh-navbar-toggler d-lg-none float-right" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
             <i class="fa fa-bars"></i>
         </a>
         <a class="navbar-brand logo float-left" routerLink="/" (click)="collapseNavbar()">
-            <span class="logo-img"></span>
-            <span jhiTranslate="global.title" class="navbar-title">Shine</span> <span class="navbar-version">{{version}}</span>
+<!--             <span class="logo-img"></span> -->
+            <span jhiTranslate="global.title" class="navbar-title">Shine</span> 
+<!--             <span class="navbar-version">{{version}}</span> -->
         </a>
     </div>
     <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="isAuthenticated()">
@@ -19,6 +20,31 @@
                 </a>
             </li>
             <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="solutions" (click)="collapseNavbar()">
+                    <span>
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>
+                        <span jhiTranslate="global.menu.solutions">Solutions</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="shine" (click)="collapseNavbar()">
+                    <span>
+                        <i class="fa fa-adn" aria-hidden="true"></i>
+                        <span jhiTranslate="global.menu.aboutUs">About Us</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="contact" (click)="collapseNavbar()">
+                    <span>
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <span jhiTranslate="global.menu.contact">Contact</span>
+                    </span>
+                </a>
+            </li>
+            
             <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">
                     <span>
